@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-app';
+  shouldDisplayMovie: boolean = true;
+
+  toggleMovieComponent(){
+    this.shouldDisplayMovie = !this.shouldDisplayMovie
+  }
 }
